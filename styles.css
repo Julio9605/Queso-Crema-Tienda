@@ -17,7 +17,7 @@ body {
 }
 
 /* Media queries para dispositivos móviles */
-@media (max-width: 888px) {
+@media (max-width: 768px) {
     .centrado {
         margin: 10px auto;
     }
