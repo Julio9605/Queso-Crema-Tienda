@@ -47,7 +47,6 @@ header, footer {
 .carrusel {
     position: relative;
     margin: 40px auto;
-    margin-bottom: 150px; 
     width: 900px; /* Ajusta el tamaño según sea necesario */
     height: 600px; /* Ajusta el tamaño según sea necesario */
     overflow: hidden;
@@ -92,7 +91,7 @@ header {
 footer a {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 100px 0;
     background-color: #007bff;
     color: white;
     text-decoration: none;
