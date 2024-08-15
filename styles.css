@@ -86,7 +86,7 @@ h1, h2, p {
 header {
     background-color: #ffa74f;
     color: white;
-    padding: 30px;
+    padding: 25px;
 }
 footer a {
     display: inline-block;
@@ -139,7 +139,7 @@ button {
 .logo {
     max-width: 100%; /* Ajusta el tamaño de la imagen para que no exceda el ancho de la pantalla */
     height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+    max-width: 350px; /* Ajusta el tamaño máximo de la imagen */
 }
 
 .fondo-imagen {
