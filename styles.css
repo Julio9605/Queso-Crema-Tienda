@@ -41,7 +41,7 @@ body {
         padding: 10px;
         text-align: center;
     }
-}
+
 
 /* CSS para el footer fijo y con animación */
 .footers {
@@ -287,4 +287,5 @@ footer {
     display: inline-block;
     width: 100%;
     max-width: 400px;
+}
 }
