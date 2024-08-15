@@ -17,33 +17,7 @@ body {
     margin: 30px auto;
 }
 
-/* Media queries para dispositivos móviles */
-@media (max-width: 768px) {
-    .centrado {
-        margin: 10px auto;
-    }
-    
-    .carrusel {
-        width: 100%;
-        height: auto;
-    }
 
-    .imagen-producto {
-        max-width: 90%;
-        height: auto;
-    }
-
-    .btn-compra, .btn, .btnp {
-        width: 90%;
-        font-size: 14px;
-    }
-
-    header, footer {
-        padding: 10px;
-        text-align: center;
-    }
-
-}
 /* CSS para el footer fijo y con animación */
 .footers {
     background-color: #ffa74f;
@@ -73,6 +47,7 @@ header, footer {
 .carrusel {
     position: relative;
     margin: 40px auto;
+    margin-bottom: 50px; 
     width: 900px; /* Ajusta el tamaño según sea necesario */
     height: 600px; /* Ajusta el tamaño según sea necesario */
     overflow: hidden;
