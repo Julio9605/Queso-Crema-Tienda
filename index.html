@@ -25,13 +25,12 @@
         <img src="1.png" class="imagen-carrusel activo" alt="Queso 1">
         <img src="2.png" class="imagen-carrusel" alt="Queso 2">
         <img src="3.png" class="imagen-carrusel" alt="Queso 3">
-        
     </div>
 
-    
-<footer class="footers">
-    <p>&copy; 2024 Tienda de Quesos</p>
-</footer>
+    <!-- Agregando espacio entre el carrusel y el footer -->
+    <footer class="footers" style="margin-top: 50px;"> <!-- Ajusta el valor del margen según tus necesidades -->
+        <p>&copy; 2024 Tienda de Quesos</p>
+    </footer>
 
     <script>
         let indiceActual = 0;
@@ -44,10 +43,7 @@
         }
 
         setInterval(cambiarImagen, 5000); // Cambia cada 5 segundos
-
-
-    
     </script>
-
 </body>
 </html>
+
