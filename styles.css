@@ -17,7 +17,7 @@ body {
 }
 
 /* Media queries para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 888px) {
     .centrado {
         margin: 10px auto;
     }
@@ -42,7 +42,7 @@ body {
         text-align: center;
     }
 
-
+}
 /* CSS para el footer fijo y con animación */
 .footers {
     background-color: #ffa74f;
@@ -288,4 +288,4 @@ footer {
     width: 100%;
     max-width: 400px;
 }
-}
+
