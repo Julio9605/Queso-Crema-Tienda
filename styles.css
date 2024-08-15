@@ -38,6 +38,17 @@ body {
     transform: translateY(0); /* Posición inicial, visible */
     z-index: 10; /* Asegura que esté por encima del contenido */
 }
+.imagen-redondeada {
+    border-radius: 15px; /* Valor ajustable */
+    width: 250px;
+    height: auto;
+}
+/* Estilo para redondear los bordes de las imágenes */
+img {
+    border-radius: 15px; /* Ajusta el valor para mayor o menor redondeo */
+    width: 250px; /* Mantiene el tamaño de la imagen */
+    height: auto;
+}
 
 .Descripción de la imagen {
     width: 80%; 
