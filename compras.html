@@ -48,23 +48,6 @@
             margin-top: 20px;
             text-align: center;
         }
-
-        /* Estilos adicionales */
-        .img-container {
-            margin-top: 100px;
-            text-align: center;
-        }
-        .img-container img {
-            max-width: 100%;
-            height: auto;
-        }
-        .img-controls {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .img-controls input[type="range"] {
-            width: 300px;
-        }
     </style>
 </head>
 <body>
@@ -104,19 +87,8 @@
         </form>
 
         <!-- Imagen debajo del formulario -->
-        <div class="img-container">
-            <img id="imagen" src="6.png" alt="Descripción de la imagen">
-        </div>
-
-        <!-- Controles para cambiar el tamaño de la imagen -->
-        <div class="img-controls">
-            <label for="ancho">Ancho: </label>
-            <input type="range" id="ancho" name="ancho" min="100" max="1000" value="500" oninput="cambiarTamaño()">
-            <span id="ancho-valor">500px</span>
-            <br><br>
-            <label for="alto">Alto: </label>
-            <input type="range" id="alto" name="alto" min="100" max="1000" value="300" oninput="cambiarTamaño()">
-            <span id="alto-valor">300px</span>
+        <div>
+            <img src="6.png" alt="Descripción de la imagen" style="max-width:100%; height:auto; margin-top:100px;">
         </div>
     </section>
 
@@ -148,19 +120,6 @@
         <a href="index.html" class="btn">Volver a Inicio</a>
     </footer>
     <script>
-        // Función para cambiar el tamaño de la imagen
-        function cambiarTamaño() {
-            const imagen = document.getElementById('imagen');
-            const ancho = document.getElementById('ancho').value;
-            const alto = document.getElementById('alto').value;
-
-            imagen.style.width = ancho + 'px';
-            imagen.style.height = alto + 'px';
-
-            document.getElementById('ancho-valor').textContent = ancho + 'px';
-            document.getElementById('alto-valor').textContent = alto + 'px';
-        }
-
         // Precio unitario del producto
         const precioUnitario = 350.00;
 
@@ -228,4 +187,3 @@
     </script>
 </body>
 </html>
-
