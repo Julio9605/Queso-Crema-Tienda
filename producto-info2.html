@@ -43,5 +43,14 @@
     <footer>
         <a href="productos.html" class="btn">Volver a Productos</a>
     </footer>
+        <script>
+document.addEventListener('scroll', function() {
+    const maxScrollTop = 500; // Altura máxima de scroll permitida
+    if (window.scrollY > maxScrollTop) {
+        window.scrollTo(0, maxScrollTop);
+    }
+});
+    
+    </script>
 </body>
 </html>
