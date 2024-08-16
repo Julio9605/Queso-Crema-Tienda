@@ -33,6 +33,12 @@
     </footer>
 
     <script>
+        document.addEventListener('scroll', function() {
+    const maxScrollTop = 500; // Altura máxima de scroll permitida
+    if (window.scrollY > maxScrollTop) {
+        window.scrollTo(0, maxScrollTop);
+    }
+});
         let indiceActual = 0;
         const imagenes = document.querySelectorAll('.imagen-carrusel');
 
