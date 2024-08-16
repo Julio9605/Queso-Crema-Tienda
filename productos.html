@@ -28,5 +28,14 @@
     <footer>
         <a href="index.html" class="btn">Volver a Inicio</a>
     </footer>
+       <script>
+document.addEventListener('scroll', function() {
+    const maxScrollTop = 500; // Altura máxima de scroll permitida
+    if (window.scrollY > maxScrollTop) {
+        window.scrollTo(0, maxScrollTop);
+    }
+});
+    
+    </script>
 </body>
 </html>
