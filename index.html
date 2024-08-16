@@ -43,6 +43,12 @@
         }
 
         setInterval(cambiarImagen, 5000); // Cambia cada 5 segundos
+         const contenedorScrollable = document.querySelector('.contenedor-scrollable');
+
+        contenedorScrollable.addEventListener('wheel', (event) => {
+            event.preventDefault(); // Previene el scroll en la página completa
+            contenedorScrollable.scrollTop += event.deltaY; // Scroll solo en la sección
+        });
     </script>
 </body>
 </html>
