@@ -6,9 +6,7 @@
     <title>Compras - Tienda de Quesos</title>
     <link rel="stylesheet" href="styles.css">
 
-
     <style>
- 
         /* Estilos para el modal */
         .modal {
             display: none; /* Oculto por defecto */
@@ -81,7 +79,8 @@
             <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="20" onchange="calcularTotal()">
 
             <p>Precio Unitario: $<span id="precio-unitario">350.00</span></p>
-            <p>Total a Pagar: $<span id="total">350.00</span></p>
+            <p>Costo de Delivery: $<span id="costo-delivery">50.00</span></p>
+            <p>Total a Pagar: $<span id="total">400.00</span></p>
 
             <label for="indicaciones">Indicaciones adicionales:</label>
             <textarea id="indicaciones" name="indicaciones" rows="4" placeholder="Escribe aquí cualquier indicación adicional..."></textarea>
@@ -90,9 +89,9 @@
         </form>
 
         <!-- Imagen debajo del formulario -->
-       <div class="imagenp">
-    <img src="6.png" alt="Descripción de la imagen">
-</div>
+        <div class="imagenp">
+            <img src="6.png" alt="Descripción de la imagen">
+        </div>
     </section>
 
     <!-- Modal de Confirmación -->
@@ -123,19 +122,17 @@
         <a href="index.html" class="btn">Volver a Inicio</a>
     </footer>
     <script>
-document.addEventListener('scroll', function() {
-    const maxScrollTop = 700; // Altura máxima de scroll permitida
-    if (window.scrollY > maxScrollTop) {
-        window.scrollTo(0, maxScrollTop);
-    }
-});
         // Precio unitario del producto
         const precioUnitario = 350.00;
+
+        // Costo de delivery
+        const costoDelivery = 50.00;
 
         // Función para calcular el total
         function calcularTotal() {
             const cantidad = document.getElementById('cantidad').value;
-            const total = precioUnitario * cantidad;
+            const totalProducto = precioUnitario * cantidad;
+            const total = totalProducto + costoDelivery;
             document.getElementById('total').textContent = total.toFixed(2);
         }
 
